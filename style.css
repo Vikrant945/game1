@@ -92,6 +92,13 @@
 }
 
 
+.mobile-users{
+    display: block;
+    position: absolute;
+    left: 0px;
+    bottom: 33px;
+   
+}
 
 @media (max-width:1006px) {
     .board{
@@ -107,6 +114,8 @@
     }
 
     .scoreboard{
+
+       
         position: absolute;
         top:30px;
         right: 30px;
@@ -114,12 +123,8 @@
     .notification{
         /* left:380px */
     }
-
-
-
-    
+ 
 }
-
 
 @media (max-width:662px) {
     .board{
@@ -128,9 +133,7 @@
     width: 420.8px;
 
     }
-   
-
-   
+      
 }
 @media (max-width:572px) {
     .board{
@@ -143,19 +146,26 @@
 
    
 }
-@media (max-width:572px) {
-    .board{
-       
+
+
+@media (max-width:531px) {
+
   
-   
-    margin:0px; 
-    margin-top: 156px;
-    margin-bottom: 156px;
 
+    .scoreboard{
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 23px;
+        /* position: absolute; */
+        top:103px;
+        /* right: 123px; */
+        font-size: small ;
     }
 
-   
 }
+
 
 @media (max-width:438px) {
     .board{
@@ -169,6 +179,56 @@
 
     }
 
+
+    .image{
+        width:300px;
+    }
+
+    .notification{
+
+        bottom: 220px;
+        font-size: larger;
+    }
+
    
+}
+
+.btn{
+
+    /* display: block;
+    position: relative; */
+    /* top: -356px;
+    right: 0px; */
+    /* height: 23px; */
+}
+
+.controlbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 52px;
+    border-radius: 4px;
+
+    margin-left: 12px;
+    margin-right: 12px;
+    border: solid black 2px;
+    box-shadow: black 2px 2px 2px;
+    
+}
+
+.midbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    
+}
+.topdownbtn{
+    margin-left: 53px;
+    padding: 12px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+
 }
 
