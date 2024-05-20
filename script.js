@@ -14,6 +14,14 @@ const gameoverSound =new Audio('hit.mp3');
 const gameStartSound= new Audio('loading.mp3');
 
 
+//control buttons
+
+
+controlbtn=document.querySelectorAll(".controlbtn");
+
+
+
+
 
 
 ///direction object
@@ -80,7 +88,7 @@ else{
 
 //start image sizing
 
-document.addEventListener("click",()=>{
+snakeImg.addEventListener("click",()=>{
      
         let count=517;
 
@@ -323,6 +331,7 @@ document.addEventListener('keydown',(e)=>{
             
             direction.x=0;
             direction.y=-1;
+            
            
             break;
 
@@ -348,6 +357,46 @@ document.addEventListener('keydown',(e)=>{
     }
     
 })
+
+//changing the directions with buttons
+for(controlbtneach of controlbtn){
+    controlbtneach.addEventListener("click",(e)=>{
+    
+        
+
+        switch(e.target.id){
+            case "btnup":
+    
+                
+                direction.x=0;
+                direction.y=-1;
+                
+               
+                break;
+    
+            
+             case "btndown":
+                        
+                        direction.x=0;
+                        direction.y=1;
+                        break;
+              case "btnleft":
+                            
+                            direction.x=-1;
+                            direction.y=0;
+                            break;
+             case "btnright":
+                                
+                                direction.x=1;
+                                direction.y=0;
+                                break;
+                default:
+                    break;
+    
+        }
+
+    })
+    }
 
 }
 
